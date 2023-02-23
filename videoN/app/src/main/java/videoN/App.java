@@ -11,12 +11,14 @@ public class App {
     }
 
     public static void main(String[] args) {
-       // na verdade esse é o video P
+       // na verdade esse Ã© o video P
         /*
-       Faça um algoritmo que receba o preço de custo e o preço de venda de 40 produtos. Mostre como resultado 
-       se houve lucro, prejuízo ou empate para cada produto. Informe o valor de custo de cada produto, o valor
-       de venda de cada produto, amédia de preço de custo e do preço de venda;
+       Faï¿½a um algoritmo que receba o preï¿½o de custo e o preï¿½o de venda de 40 produtos. Mostre como resultado 
+       se houve lucro, prejuï¿½zo ou empate para cada produto. Informe o valor de custo de cada produto, o valor
+       de venda de cada produto, amï¿½dia de preï¿½o de custo e do preï¿½o de venda;
        */
+        
+        // nÃºmero de repetiÃ§Ã£oo usando o i
         
         Scanner leitorScanner = new Scanner(System.in);
         
@@ -31,26 +33,29 @@ public class App {
         
         for(i = 1; i <= 2; i++) {
             
-            System.out.println("Digite o preço de custo:");
+            System.out.println("Digite o preÃ§o de custo:");
+            
             precoCusto = leitorScanner.nextDouble();
-            System.out.println("Digite o preço de venda:");
+            
+            System.out.println("Digite o preÃ§o de venda:");
+            
             precoVenda = leitorScanner.nextDouble();
-            
-            mediaPreco =+ precoVenda;
-            calculePreco = (mediaPreco/2);
+
+            mediaPreco = +precoVenda;
+            calculePreco = (mediaPreco / 2);
             calculeLucro = precoVenda - precoCusto;
-            
+
             if (precoVenda < precoCusto) {
-                System.out.println("Voce teve prejuízo, pois seu preco de venda foi de " + 
-                        precoVenda + " Seu preco custo foi de " + precoCusto + "Seu prejuízo foi de: ");
-                
+                System.out.println("Voce teve prejuÃ­zo, pois seu preÃ§o de venda foi de "
+                        + precoVenda + " Seu preÃ§o custo foi de " + precoCusto + "Seu prejuÃ­zo foi de: ");
+
             } else if (precoVenda == precoCusto) {
                 System.out.println(" Voce teve um empate, pois seu preco venda foi de: "
-                        + precoVenda + " Seu preco custo foi de " + precoCusto);
+                        + precoVenda + " Seu preÃ§o custo foi de " + precoCusto);
             } else {
-                
+
                 System.out.println("Seu lucro foi de: " + calculeLucro + " Seu preco venda foi de: "
-                        + precoVenda + " Seu preco custo foi de " + precoCusto + "Sua media é: " + calculePreco);
+                        + precoVenda + " Seu preÃ§o custo foi de " + precoCusto + "Sua media Ã©: " + calculePreco);
 
             }
 
